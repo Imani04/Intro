@@ -1,0 +1,35 @@
+Public class Numbers {
+
+	int[] 
+
+intNumbers={34,2,32,23,42,0,53,12,43,124,0,123,4,12,0,66,77,12,54,43};
+	int oddCount, evenCount, zeroCount;
+	
+	public Numbers(){
+		oddCount =0;
+		evenCount=0;
+		zeroCount=0;
+		
+		sort();
+	}
+	
+	Public void sort(){
+		for(int a=0; a<intNumbers.length; a++){ 
+			if(intNumbers[a]==0){
+				zeroCount++;
+			}elseif(intNumbers[a]%2==0){
+				evenCount++;
+			}else{
+				oddCount++;
+			}
+			
+		}
+		
+		System.out.println("Zero count: "+zeroCount);
+		System.out.println("Even count: "+evenCount);
+		System.out.println("Odd count: "+oddCount);
+	}
+
+	Public static void main(String[] args){
+		new Numbers();
+	}
